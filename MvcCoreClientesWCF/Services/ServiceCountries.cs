@@ -18,7 +18,7 @@ namespace MvcCoreClientesWCF.Services
         {
             this.client = new CountryInfoServiceSoapTypeClient(CountryInfoServiceSoapTypeClient.EndpointConfiguration.CountryInfoServiceSoap);
         }
-        /*importante para objetener todos los paises*/
+        /*importante para obtener todos los paises*/
         public async Task<tCountryCodeAndName[]> GetCountries() 
         {
             ListOfCountryNamesByNameResponse response =

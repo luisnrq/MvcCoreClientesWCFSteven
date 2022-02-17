@@ -1,7 +1,11 @@
 ﻿@model tCountryInfo
-
-<ul>
-    <li>
+<a asp-controller="Countries"
+   asp-action="Index"
+   class="btn btn-danger">
+    Volver
+</a>
+<ul class="list-group">
+    <li class="list-group-item">
        sName: @Model.sName
     </li>
     <li>
