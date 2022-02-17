@@ -1,0 +1,16 @@
+﻿@model tCountryCodeAndName[]
+
+<ul class="list-group">
+    @foreach (tCountryCodeAndName country in Model) 
+    {
+    <li class="list-group-item">
+        @country.sName
+        <a asp-controller="Countries"
+           asp-action="Details"
+           asp-route-id="@country.sISOCode"
+           class="btn btn-success">
+            Detalles
+        </a>
+    </li>
+    }
+</ul>
