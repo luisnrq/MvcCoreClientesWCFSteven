@@ -1,0 +1,12 @@
+﻿@model List<String>
+
+<h1>Lista de Municipios</h1>
+
+<ul class="list-group">
+    @foreach (String m in Model) 
+    { 
+        <li>
+            @m
+        </li>
+    }
+</ul>
